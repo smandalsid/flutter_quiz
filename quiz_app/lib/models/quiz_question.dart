@@ -4,4 +4,10 @@ class QuizQuestion {
 
   final String text;
   final List<String> answers;
+
+  List<String> shuffled() {
+    final shuffledlist = List.of(answers);
+    shuffledlist.shuffle();
+    return shuffledlist;
+  }
 }
